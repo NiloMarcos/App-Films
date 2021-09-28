@@ -28,13 +28,15 @@ export default function ListFilms({ data }) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#403d39',
     margin: 15,
-    elevation: 3
+    elevation: 3,
+    borderRadius: 5
   },
   titulo: {
     padding: 15,
     fontSize: 18,
+    color: '#FFF',
   },
   image: {
     height: 250,
