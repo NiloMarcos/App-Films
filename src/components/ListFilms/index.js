@@ -11,7 +11,6 @@ export default function ListFilms({ data }) {
       <View style={styles.card}>
         <Text style={styles.titulo}>{data.nome}</Text>
         <Image style={styles.image} source={{ uri: data.foto}} />
-        {/* <Text>{data.sinopse}</Text> */}
 
         <View style={styles.areaBotao}>
           <TouchableOpacity style={styles.botao} onPress={() => setVisibleModal(true)}>
@@ -21,16 +20,13 @@ export default function ListFilms({ data }) {
       </View>
 
       <Modal transparent={true} animationType="slide" visible={visibleModal} >
-        <Details />
+        <Details film={data} voltar={() => setVisibleModal(false)} />
       </Modal>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-
-  },
   card: {
     backgroundColor: '#FFFFFF',
     margin: 15,

@@ -1,18 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function Details(){
+export default function Details({film, voltar}){
   return(
     <View style={styles.container}>
 
       <View style={styles.ModalContainer}>
-        <TouchableOpacity style={styles.btnVoltar}>
+        <TouchableOpacity style={styles.btnVoltar} onPress={voltar}>
           <Text style={{color: '#FFF', fontSize: 16}}>Voltar</Text>
         </TouchableOpacity>
 
-        <Text style={styles.titulo}>Vingadores Ultimato</Text>
+        <Text style={styles.titulo}>{film.nome}</Text>
         <Text style={styles.sinopse}>Sinopse...</Text>
-        <Text style={styles.description}>Sinopse Completa...</Text>
+        <Text style={styles.description}>{film.sinopse}</Text>
       </View>
 
     </View>
