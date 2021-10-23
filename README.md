@@ -34,7 +34,15 @@ Para instalar o projeto em sua maquina siga os passos abaixo.
 4. Aplicativo feito com Expo.
 ### Fotos da aplicação
 
-<div align="center">
-   <img src="src/assets/Screenshot_1632868679.png">
-   <img src="src/assets/Screenshot_1632868682.png">
-</div>
+<p align="center">
+<table  style="border: none">
+  <tr>
+    <td>
+      <img src="src/assets/Screenshot_1632868679.png">
+    </td>
+    <td>
+      <img src="src/assets/Screenshot_1632868682.png">
+    </td>
+  </tr>
+</table>
+</p>
